@@ -6,3 +6,4 @@ const obj = {
     is:false
 };
 console.log(obj.name);
+console.log("hi")
