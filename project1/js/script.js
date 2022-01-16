@@ -1,9 +1,16 @@
-﻿"use strict";
-let num = 5;
-console.log(num);
-const obj = {
-    name: "jo",
-    is:false
+﻿let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?","" );
+let personalMovieDB = {
+    count:numberOfFilms,
+    movies : {},
+    actors : {},
+    genres : [],
+    privat : false, 
 };
-console.log(obj.name);
-console.log("hi")
+const a = prompt("last viewed film",""),
+      b =  prompt("mark",""),
+      c = prompt("last viewed film",""),
+      d =  prompt("mark","");
+      personalMovieDB.movies[a] =b;
+      personalMovieDB.movies[c] =d;
+      
+      console.log(personalMovieDB);
