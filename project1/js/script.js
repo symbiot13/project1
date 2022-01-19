@@ -1,4 +1,7 @@
-﻿let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?","" );
+﻿let numberOfFilms;
+function start(){
+    numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?","" );
+}
 let personalMovieDB = {
     count:numberOfFilms,
     movies : {},
@@ -32,3 +35,32 @@ let personalMovieDB = {
       }
      
       console.log(personalMovieDB);
+
+
+
+
+      const options = {
+          name: 'oleg',
+          width : 1024,
+          height : 1024,
+          colors : {
+              bg : 'red',
+              border : 'black'
+          }
+      };
+      let counter = 0;
+      for (let key in options ){
+          if (typeof(options[key]) === 'object') {
+            for(let i in options[key] )  {
+                console.log(`key ${i} with ${options[key][i]}`);
+                counter++;
+            }  
+        } else {
+            console.log(`key ${key} with ${options[key]}`);
+            conter++;
+        }
+      }
+      console.log(counter);
+
+
+      
