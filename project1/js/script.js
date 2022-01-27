@@ -151,3 +151,24 @@ john._proto_  =  soldier;
 
 Object.setPrototypeOf(john, soldier);
 
+// To string
+// 1) staraya
+console.log(typeof(String(null)));
+
+//2)
+console.log(typeof(5 + ''));
+
+//To number
+// 1) staree 4em v string (useless)
+console.log(typeof(Number('4')));
+
+//2)
+
+console.log(typeof(+'5'));
+
+//3)
+console.log(typeof(parseInt('15px',10)));
+
+// To boolean
+// false 0,'',null,undefined,NaN;
+
